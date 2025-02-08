@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ammo : MonoBehaviour
+public class AmmoEnemy : MonoBehaviour
 {
 
-    private float lifetime;
+    public float lifetime;
 
     void Start()
     {
@@ -24,7 +24,7 @@ public class Ammo : MonoBehaviour
 
     private IEnumerator CollisionType(float time)
     {
-      yield return new WaitForSeconds(time);
-      Destroy(gameObject);
+        yield return new WaitForSeconds(time);
+        Destroy(gameObject);
     }
 }

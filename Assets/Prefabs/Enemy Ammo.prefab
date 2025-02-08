@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 173782168440625116}
   - component: {fileID: -2318179668877930827}
   m_Layer: 0
-  m_Name: Ammo
+  m_Name: Enemy Ammo
   m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.15659687, g: 0.8679245, b: 0.1514774, a: 1}
+  m_Color: {r: 0.9150943, g: 0.047481313, b: 0.056635063, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5bf9c0cbba59c7478926f8d9f56048b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 0.2
+  lifetime: 2
 --- !u!58 &-2318179668877930827
 CircleCollider2D:
   m_ObjectHideFlags: 0

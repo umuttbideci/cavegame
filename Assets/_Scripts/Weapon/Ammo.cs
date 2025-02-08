@@ -5,23 +5,26 @@ using UnityEngine;
 public class Ammo : MonoBehaviour
 {
 
-    public float lifetime = 2f;
+    public float lifetime = 0.1f;
 
     void Start()
     {
-        Destroy(gameObject, lifetime);
-        BoxCollider2D col = GetComponent<BoxCollider2D>();
+        //Destroy(gameObject, lifetime);
+        //BoxCollider2D col = GetComponent<BoxCollider2D>();
+        StartCoroutine(CollisionType(0.2f));
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
+        if (collision.gameObject.CompareTag("Walls"))
+        {
+            Destroy(gameObject);
+        }
     }
-
 
     private IEnumerator CollisionType(float time)
     {
-       yield return new WaitForSeconds(time);
-
+      yield return new WaitForSeconds(time);
+      Destroy(gameObject);
     }
 }

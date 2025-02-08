@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float spreadAngle = 15f; 
     [SerializeField] private float fireRate = 0.5f; 
 
+    
     private Rigidbody2D rb;
     private Vector2 movementInput;
     private bool canShoot = true; 

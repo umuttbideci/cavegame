@@ -10,10 +10,18 @@ public class Ammo : MonoBehaviour
     void Start()
     {
         Destroy(gameObject, lifetime);
+        BoxCollider2D col = GetComponent<BoxCollider2D>();
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         Destroy(gameObject);
+    }
+
+
+    private IEnumerator CollisionType(float time)
+    {
+       yield return new WaitForSeconds(time);
+
     }
 }

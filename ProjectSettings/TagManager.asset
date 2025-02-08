@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Projectile
+  - Walls
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Walls
   - Water
   - UI
   - 
